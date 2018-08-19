@@ -32,7 +32,7 @@ class Song
     genre_count = {}
     unique_genres = @@genres.uniq
     unique_genres.each do |ugen|
-      genre_count[ugen] = @@genres.count
+      genre_count[ugen] = []
     end
   end
 
