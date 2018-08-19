@@ -35,6 +35,7 @@ class Song
       genre_count[ugen] = []
       genre_count[ugen] << @@genres.count {|gen| gen == ugen}
     end
+    return @@genres
   end
 
   def self.artist_count
