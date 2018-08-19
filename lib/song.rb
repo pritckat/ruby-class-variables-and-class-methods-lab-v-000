@@ -38,6 +38,10 @@ class Song
   end
 
   def self.artist_count
-    {"Brittany Spears" => 1, "Jay-Z" => 2}
-  end
+    artist_count = {}
+    unique_artists = @@artists.uniq
+    unique_artists.each do |uart|
+      artist_count[uart] = @@artist.count {|art| art == uart}
+    end
+    artist_count
 end
