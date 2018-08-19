@@ -34,6 +34,7 @@ class Song
     unique_genres.each do |ugen|
       genre_count[ugen] = []
     end
+    genre_count
   end
 
   def self.artist_count
